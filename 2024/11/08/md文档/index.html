@@ -1,105 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    高山流水
+  </title>
+  <link rel="icon" href="/imgs/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/plugins/highlight/styles/xcode.css">
+  <!-- Gitalk -->
   
-  
-  <title>md文档 | 高山流水</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="我的 Markdown 教程1. 标题一级标题这是一个一级标题。 二级标题这是一个二级标题。 2. 强调这是 斜体，这是 加粗。 3. 列表无序列表：  项目 1 项目 2  有序列表：  第一项 第二项  4. 链接与图片Google  5. 引用 这是一个引用的示例。  6. 代码行内代码：echo &quot;Hello, Markdown!&quot; 7. 水平线 8. 表格   名字">
-<meta property="og:type" content="article">
-<meta property="og:title" content="md文档">
-<meta property="og:url" content="http://example.com/2024/11/08/md%E6%96%87%E6%A1%A3/index.html">
-<meta property="og:site_name" content="高山流水">
-<meta property="og:description" content="我的 Markdown 教程1. 标题一级标题这是一个一级标题。 二级标题这是一个二级标题。 2. 强调这是 斜体，这是 加粗。 3. 列表无序列表：  项目 1 项目 2  有序列表：  第一项 第二项  4. 链接与图片Google  5. 引用 这是一个引用的示例。  6. 代码行内代码：echo &quot;Hello, Markdown!&quot; 7. 水平线 8. 表格   名字">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://www.example.com/image.jpg">
-<meta property="article:published_time" content="2024-11-08T13:08:34.000Z">
-<meta property="article:modified_time" content="2024-11-08T14:54:01.728Z">
-<meta property="article:author" content="gxd">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.example.com/image.jpg">
-  
-    <link rel="alternate" href="/atom.xml" title="高山流水" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        const gitalkContainer = document.getElementById('gitalk-container');
+        if (!gitalkContainer) return;
+        const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '',      // The repository of store comments '
+          owner: '',
+          admin: ['xx'],
+          id: location.pathname,      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+        gitalk.render('gitalk-container');
+      })
+    </script>
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
 <meta name="generator" content="Hexo 7.3.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">高山流水</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">xjq的小迷弟</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
+    <nav>
+  <div class="nav-item logo">
+    <a href="/">
+      <button class="btn btn-hover">
+        <span>
+          高山流水
+        </span>
+      </button>
+    </a>
   </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-md文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/11/08/md%E6%96%87%E6%A1%A3/" class="article-date">
-  <time class="dt-published" datetime="2024-11-08T13:08:34.000Z" itemprop="datePublished">2024-11-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 class="p-name article-title" itemprop="headline name">
-      md文档
-    </h1>
-  
-
-      </header>
+    <div class="nav-item"><a href="/archives">
+        列表
+      </a></div>
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="我的-Markdown-教程"><a href="#我的-Markdown-教程" class="headerlink" title="我的 Markdown 教程"></a>我的 Markdown 教程</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h2><h3 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h3><p>这是一个一级标题。</p>
+</nav>
+    <main>
+        <div class="post">
+    <article class="card post-article">
+  
+              
+                  <h3 class="article-title-detail"><span>
+                      md文档
+                    </span></h3>
+                  <div class="posted-on-detail">『24-11-08 21时』</div>
+                  
+                    
+                      <div class="article-top-meta">
+                        
+                      </div>
+                      
+
+                          <div class="article-content">
+                            <div class="entry">
+                              
+                                    <h1 id="我的-Markdown-教程"><a href="#我的-Markdown-教程" class="headerlink" title="我的 Markdown 教程"></a>我的 Markdown 教程</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1. 标题"></a>1. 标题</h2><h3 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h3><p>这是一个一级标题。</p>
 <h3 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h3><p>这是一个二级标题。</p>
 <h2 id="2-强调"><a href="#2-强调" class="headerlink" title="2. 强调"></a>2. 强调</h2><p>这是 <em>斜体</em>，这是 <strong>加粗</strong>。</p>
 <h2 id="3-列表"><a href="#3-列表" class="headerlink" title="3. 列表"></a>3. 列表</h2><p>无序列表：</p>
@@ -140,126 +108,62 @@
 <li><input checked="" disabled="" type="checkbox"> 阅读书籍</li>
 </ul>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/11/08/md%E6%96%87%E6%A1%A3/" data-id="cm38v0ufd0000aupveddwdw3z" data-title="md文档" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2024/11/08/%E5%92%B1%E7%88%B8%E4%B8%8D%E6%8E%A5%E7%94%B5%E8%AF%9D/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          咱爸不接电话
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2024/11/08/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%97%A5%E8%89%B2%E5%8F%98%E5%BE%97%E6%85%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">从前的日色变得慢</div>
-    </a>
-  
-</nav>
+                                      
+                            </div>
+                          </div>
+                          <div class="article-footer">
 
-  
+                          </div>
 </article>
-
-
-</section>
         
-          <aside id="sidebar">
-  
-    
+            
+</div>
 
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/11/">November 2024</a></li></ul>
-    </div>
+    </main>
+    <div class="footer">
+  <div class="copy">
+    &copy;
+      2024 xjq
+        的小迷弟<a href="https://github.com/JackZong" target="_blank" ></a>
   </div>
-
-
-  
+  <div class="hexo">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/11/08/%E5%92%B1%E7%88%B8%E4%B8%8D%E6%8E%A5%E7%94%B5%E8%AF%9D/">咱爸不接电话</a>
-          </li>
-        
-          <li>
-            <a href="/2024/11/08/md%E6%96%87%E6%A1%A3/">md文档</a>
-          </li>
-        
-          <li>
-            <a href="/2024/11/08/%E4%BB%8E%E5%89%8D%E7%9A%84%E6%97%A5%E8%89%B2%E5%8F%98%E5%BE%97%E6%85%A2/">从前的日色变得慢</a>
-          </li>
-        
-      </ul>
-    </div>
   </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 gxd<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
+  <div class="hexo" title="Powered by Hexo">
+    <a href="http://hexo.io/" target="_blank"></a>  <a href="javascript:void(0);" id="bgToggle">  </a>
   </div>
-</footer>
+</div>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+<script>
+  window.onload = function () {
+    const withBg = localStorage.getItem('withBg');
+    if (withBg === 'true') {
+      document.body.classList.add('with-bg');
+      document.getElementById('bgToggle').classList.add('active');
+    }
+
+    document.getElementById('bgToggle').addEventListener('click', function (e) {
+      e.preventDefault();
+      const withBg = localStorage.getItem('withBg');
+      if (withBg === 'true') {
+        localStorage.setItem('withBg', 'false');
+        document.body.classList.remove('with-bg');
+        document.getElementById('bgToggle').classList.remove('active');
+      } else {
+        localStorage.setItem('withBg', 'true');
+        document.body.classList.add('with-bg');
+        document.getElementById('bgToggle').classList.add('active');
+      }
+    })
+  }
+</script>
+
+
+
     
+        </body>
 
+        </html>
 
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
 </html>
