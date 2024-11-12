@@ -47,10 +47,55 @@
         列表
       </a></div>
     
+    <div class="nav-item"><a href="/tags">
+        标签
+      </a></div>
+    
 </nav>
     <main>
         <div class="wrapper">
     
+      
+        <article class="card ">
+  
+              
+                <div class="posted-on">『24-11-12 16:21:41』</div>
+                <h3 class="article-title"><a href="/2024/11/12/SSH龟速连接/"><span>
+                      SSH龟速连接
+                    </span></a></h3>
+                
+                    
+                      
+                      
+
+                          <div class="article-content">
+                            <div class="entry">
+                              
+                                    <h2 id="SecureCRT连虚拟机很慢很慢解决方法"><a href="#SecureCRT连虚拟机很慢很慢解决方法" class="headerlink" title="SecureCRT连虚拟机很慢很慢解决方法"></a>SecureCRT连虚拟机很慢很慢解决方法</h2><h3 id="现象："><a href="#现象：" class="headerlink" title="现象："></a>现象：</h3><p>SSH到虚拟机需要1-2分钟才连的上，速度较慢</p>
+<h3 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h3><p>sshd_config文件中UseDNS服务器反向解析缺省打开，根据客户端IP地址进行DNS PTR反向查<br>询客户端的主机名，以此进行A记录查询，来验证IP地址是否一致，防止欺骗</p>
+<h3 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h3><ol>
+<li><p>root下修改配置文件</p>
+<blockquote>
+<p>vim &#x2F;etc&#x2F;ssh&#x2F;sshd_config<br>&#x2F;UseDNS #查询<br>UseDNS no #修改为no<br>&#x2F;GSSAPIAuthentication #查询<br>GSSAPIAuthentication no #修改为no</p>
+</blockquote>
+</li>
+<li><p>重启ssh服务</p>
+<blockquote>
+<p>systemctl restart sshd</p>
+</blockquote>
+</li>
+</ol>
+
+                                      
+                            </div>
+                          </div>
+                          <div class="article-footer">
+
+                          </div>
+</article>
+
+       
+      
       
         <article class="card ">
   
@@ -61,9 +106,7 @@
                     </span></a></h3>
                 
                     
-                      <div class="article-top-meta">
-                        
-                      </div>
+                      
                       
 
                           <div class="article-content">
@@ -83,6 +126,7 @@
 
                           </div>
 </article>
+
        
       
       
@@ -95,9 +139,7 @@
                     </span></a></h3>
                 
                     
-                      <div class="article-top-meta">
-                        
-                      </div>
+                      
                       
 
                           <div class="article-content">
@@ -112,6 +154,7 @@
 
                           </div>
 </article>
+
        
       
       
@@ -124,9 +167,7 @@
                     </span></a></h3>
                 
                     
-                      <div class="article-top-meta">
-                        
-                      </div>
+                      
                       
 
                           <div class="article-content">
@@ -140,6 +181,7 @@
 
                           </div>
 </article>
+
        
       
     
