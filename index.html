@@ -81,47 +81,11 @@
 </blockquote>
 <p>这样还原的时候还得改时间，太麻烦,可以这样，只修改日期，保留时间</p>
 <blockquote>
-<p>sudo date -s “2024-06-01 <code> `date +%T`</code>“<br>sudo date -s “2024-06-01 反引号date +%T反引号”</p>
+<p>sudo date -s “2024-06-01 反引号date +%T反引号”</p>
 </blockquote>
 <p>其他情况以此类推</p>
 <hr>
-<p>附<a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-date.html" title="date命令">date命令</a></p>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>注释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>date -s</td>
-<td># 设置当前时间，只有root权限才能设置，其他只能查看</td>
-</tr>
-<tr>
-<td>date -s 20120523</td>
-<td># 设置成20120523，这样会把具体时间设置成00:00:00</td>
-</tr>
-<tr>
-<td>date -s 01:01:01</td>
-<td># 设置具体时间，不会对日期做更改</td>
-</tr>
-<tr>
-<td>date -s “01:01:01 2012-05-23”</td>
-<td># 这样可以设置全部时间</td>
-</tr>
-<tr>
-<td>date -s “01:01:01 20120523”</td>
-<td># 这样可以设置全部时间</td>
-</tr>
-<tr>
-<td>date -s “2012-05-23 01:01:01”</td>
-<td># 这样可以设置全部时间# 这样可以设置全部时间</td>
-</tr>
-<tr>
-<td>date -s “20120523 01:01:01”</td>
-<td># 这样可以设置全部时间</td>
-</tr>
-</tbody></table>
+<p>附<a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-date.html">https://www.runoob.com/linux/linux-comm-date.html</a></p>
 
                                       
                             </div>
